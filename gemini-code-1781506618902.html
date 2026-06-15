@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>u/mjykt | Premium Web Development</title>
+    <style>
+        /* Base Reset & Metallic Purple Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a0933 0%, #3d1466 25%, #6a2599 50%, #3d1466 75%, #1a0933 100%);
+            background-size: 400% 400%;
+            animation: metallicShine 15s ease infinite;
+            color: #f3e8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Metallic shine animation effect */
+        @keyframes metallicShine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 650px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(35, 15, 60, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(186, 104, 200, 0.4);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37),
+                        inset 0 0 15px rgba(230, 180, 255, 0.1);
+            text-align: center;
+        }
+
+        /* Header / Reddit Profile Section */
+        .profile-header {
+            margin-bottom: 30px;
+        }
+
+        .reddit-badge {
+            background: linear-gradient(135deg, #ff4500 0%, #cc3700 100%);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 10px 0;
+            background: linear-gradient(180deg, #ffffff 30%, #d8b4fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            color: #c0a0e0;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Business Merits Section */
+        .merits-list {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .merit-card {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 4px solid #ba68c8;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 0 12px 12px 0;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .merit-card:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-left-color: #e0aaff;
+        }
+
+        .merit-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #e0aaff;
+            margin-bottom: 5px;
+        }
+
+        .merit-desc {
+            font-size: 0.95rem;
+            color: #d1c4e9;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Call To Action Button (Hyperlink) */
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4),
+                        inset 0 1px 0 rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(156, 39, 176, 0.6),
+                        inset 0 1px 0 rgba(255,255,255,0.4);
+            background: linear-gradient(135deg, #ba68c8 0%, #7e57c2 100%);
+        }
+
+        .cta-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="profile-header">
+            <span class="reddit-badge">REDDIT PARTNER</span>
+            <h1>u/mjykt</h1>
+            <p class="tagline">High-Performance, Custom Web Development Solutions</p>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(186, 104, 200, 0.5), transparent); margin-bottom: 30px;">
+
+        <!-- Merits of the Business -->
+        <div class="merits-list">
+            <div class="merit-card">
+                <div class="merit-title">⚡ Tailor-Made & Responsive Design</div>
+                <p class="merit-desc">Every website is built from scratch to align perfectly with your brand. Fully optimized to look stunning on mobile, tablet, and desktop devices.</p>
+            </div>
+
+            <div class="merit-card">
+                <div class="merit-title">🚀 Blazing Fast Performance</div>
+                <p class="merit-desc">Clean, efficient code ensures lightning-fast loading speeds, keeping your visitors engaged and drastically improving your conversion rates.</p>
+            </div>
+
+            <div class="merit-card">
+                <div class="merit-title">📈 Built-In SEO Optimization</div>
+                <p class="merit-desc">Structure and metadata are engineered according to modern search engine guidelines right from the start, helping you rank higher on Google.</p>
+            </div>
+
+            <div class="merit-card">
+                <div class="merit-title">💬 Direct & Transparent Collaboration</div>
+                <p class="merit-desc">No agency bureaucracy. Work directly with me via Reddit or your preferred channel for seamless updates, rapid iterations, and reliable support.</p>
+            </div>
+        </div>
+
+        <!-- Hyperlink to Reddit -->
+        <a href="https://www.reddit.com/user/mjykt" target="_blank" class="cta-btn">
+            Let's Build Your Site – Message Me on Reddit
+        </a>
+    </div>
+
+</body>
+</html>
